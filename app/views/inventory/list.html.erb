@@ -1,0 +1,36 @@
+<h1>Mallory Furniture</h1>
+<div class="navbuttons">
+<%= link_to root_path, class:"homebutton" do %>
+HOME
+<% end %>
+<%= link_to inventory_list_path, class:"backbutton" do %>
+BACK
+<% end %>
+</div>
+
+<div class="outerwrap">
+  <% @inventory.each do |inventory| %>
+    <div class="itemtile">
+      <div class="image">
+        <%= image_tag "products/#{inventory.img_file}.jpg" %>
+      </div>
+      <div class="description">
+      <%= inventory.item %>
+      </div>
+      <div class="price">
+        <% if inventory.condition == "good" %><span class="Clearance">Clearance</span>
+          <%= number_to_currency inventory.price.to_i * 0.90 %>
+        <% elsif inventory.condition == "average"  %><span class="Clearance">Clearance</span>
+          <%= number_to_currency inventory.price.to_i * 0.80 %>
+        <% else %>
+          <%= number_to_currency inventory.price %>
+        <% end %>
+      </div>
+      <div>
+        <a class="button" href="/inventory/<%= inventory.pid %>">More Info
+      </a>
+      </div>
+    </div>
+      <% inventory.quantity.to_s %>
+    <% end %>
+</div>

@@ -1,0 +1,201 @@
+// Place all the styles related to the inventory controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  color: #00331a;
+  margin-top:  10px;
+  text-align: center;
+}
+
+.outerwrap {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin-left: 50px;
+ margin-right: 50px;
+ flex-wrap: wrap;
+ }
+
+.itemtile {
+  border: 2px solid #00331a;
+  width: 275px;
+  height: 415px;
+  padding: 6px 0px 2px 14px;
+  margin: 4px 2px 2px 2px;
+  border-radius: 6px;
+}
+
+.image img {
+  width: 240px;
+  height: 220px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color:#00331a;
+  border-radius: 8px;
+  padding: 2px 2px 2px 2px;
+}
+
+.description {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
+  color: #00331a;
+  margin-top:  12px;
+  width: 240px;
+}
+
+.price {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 24px;
+  color: #00331a;
+  width: 240px;
+  padding: 4px 1px 12px 1px;
+}
+
+.button {
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 1px 6px 1px 6px;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 18px;
+  color: black;
+}
+
+.detailcontainer {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ margin-left: 50px;
+ margin-right: 50px;
+ flex-wrap: wrap;
+ }
+
+.detailimage img{
+  width: 500px;
+  height: 400px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 2px 2px 2px 2px;
+
+}
+
+a {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 24px;
+  color: #00331a;
+  width: 240px;
+  padding: 4px 1px 12px 1px;
+}
+
+
+.navbuttons {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+.homebutton {
+height: 20px;
+width: 18px;
+padding: 4px;
+color: #F58505;
+font-weight: bold;
+background-color: white;
+}
+
+.backbutton {
+  height: 22px;
+  width: 22px;
+  padding: 4px;
+  color: blue;
+  font-weight: bold;
+}
+
+.detailcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  position:absolute;
+  width: 100%;
+  margin-top:  2px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+  margin-left: 10px;
+  border: 1px solid #00331a;
+}
+.detailimage {
+}
+
+.detailtable {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+  position:absolute;
+  margin-top:  1px;
+  margin-right: 1px;
+  margin-bottom: 11px;
+  margin-left: 1px;
+  border: 1px solid #00331a;
+  width: 320px;
+  height: 130px;
+  margin-top: 0px;
+  margin-left: 300px;
+  right: 10px;
+  top: 50px;
+  z-index: 2;
+}
+
+.tableitem {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  color: black;
+  align-items: flex-start;
+  text-decoration: none;
+  background-color: #f2c40d;
+}
+
+.priceline {
+  align-items: flex-start;
+  width: 100%;
+  text-decoration: none;
+}
+
+h4 {
+  background-color: #bff6eb;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: black;
+  width: 100%;
+}
+.tableprice {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: black;
+  align-items: flex-start;
+  text-decoration: none;
+}
+.csvdescription {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: black;
+  align-items: flex-start;
+  text-decoration: none;
+}
+.wlh {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: black;
+  align-items: flex-start;
+  text-decoration: none;
+}

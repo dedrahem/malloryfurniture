@@ -1,0 +1,44 @@
+<!-- detail.html.erb         -->
+<h1>Mallory Furniture</h1>
+<div class="navbuttons">
+<%= link_to root_path, class:"homebutton" do %>
+HOME
+<% end %>
+<%= link_to inventory_list_path, class:"backbutton" do %>
+BACK
+<% end %>
+</div>
+
+<div class="detailcontainer">
+  <div class="detailimage">
+    <%= image_tag "products/#{@inventoryitem.img_file}.jpg" %>
+  </div>
+  <div class="detailtable">
+    <div class="tableitem">
+      <%= @inventoryitem.item %>
+    </div>
+    <div class="priceline">
+    <h4> Price </h4>
+  </div>
+    <div class="tableprice">
+      <% if @inventoryitem.condition == "good" %>Clearance
+        <%= number_to_currency @inventoryitem.price.to_i * 0.90 %>
+      <% elsif @inventoryitem.condition == "average"  %>Clearance
+        <%= number_to_currency @inventoryitem.price.to_i * 0.80 %>
+      <% else %>
+        <%= number_to_currency @inventoryitem.price %>
+      <% end %>
+    </div>
+    <a> Description </a>
+    <div class="csvdescription">
+        <%= @inventoryitem.description %>
+    </div>
+      <a> Dimensions </a>
+      <div class="wlh">
+          <%= @inventoryitem.dimension_w %>
+          <%= @inventoryitem.dimension_l %>
+          <%= @inventoryitem.dimension_h %>
+      </div>
+
+  </div>
+</div>
