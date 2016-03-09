@@ -10,7 +10,7 @@ BACK
 </div>
 
 <div class="detailcontainer">
-  <div class="detailimage">
+  <div class="loneimage">
     <%= image_tag "products/#{@inventoryitem.img_file}.jpg" %>
   </div>
   <div class="detailtable">
@@ -29,15 +29,15 @@ BACK
         <%= number_to_currency @inventoryitem.price %>
       <% end %>
     </div>
-    <a> Description </a>
+    <h5> Description </h5>
     <div class="csvdescription">
         <%= @inventoryitem.description %>
     </div>
-      <a> Dimensions </a>
+      <h5> Dimensions </h5>
       <div class="wlh">
-          <%= @inventoryitem.dimension_w %>
-          <%= @inventoryitem.dimension_l %>
-          <%= @inventoryitem.dimension_h %>
+          <p1><span class="Width">Width: </span><%= @inventoryitem.dimension_w %> </p>
+        <p1><span class="Width">Length: </span><%= @inventoryitem.dimension_l %> </p>
+         <p1><span class="Width">Height: </span><%= @inventoryitem.dimension_h %> </p>
       </div>
 
   </div>

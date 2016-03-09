@@ -27,6 +27,7 @@ h1 {
   padding: 6px 0px 2px 14px;
   margin: 4px 2px 2px 2px;
   border-radius: 6px;
+  z-index: 1;
 }
 
 .image img {
@@ -41,6 +42,7 @@ h1 {
   border-color:#00331a;
   border-radius: 8px;
   padding: 2px 2px 2px 2px;
+  z-index: 1;
 }
 
 .description {
@@ -85,7 +87,7 @@ h1 {
   margin-left: 0px;
   margin-right: 0px;
   padding: 2px 2px 2px 2px;
-
+  z-index: 1;
 }
 
 a {
@@ -101,15 +103,16 @@ a {
   position: fixed;
   top: 0px;
   right: 0px;
+  z-index: 4;
 }
 
 .homebutton {
 height: 20px;
 width: 18px;
 padding: 4px;
-color: #F58505;
+color: red;
 font-weight: bold;
-background-color: white;
+z-index: 4;
 }
 
 .backbutton {
@@ -131,9 +134,16 @@ background-color: white;
   margin-right: 10px;
   margin-bottom: 2px;
   margin-left: 10px;
-  border: 1px solid #00331a;
+  border: 0px solid #00331a;
 }
-.detailimage {
+.loneimage img{
+  width: 400px;
+  height: 400px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 100px;
+  margin-right: 0px;
+  padding: 2px 2px 2px 2px;
 }
 
 .detailtable {
@@ -143,10 +153,10 @@ background-color: white;
   flex-wrap: wrap;
   position:absolute;
   margin-top:  1px;
-  margin-right: 1px;
+  margin-right: 10px;
   margin-bottom: 11px;
   margin-left: 1px;
-  border: 1px solid #00331a;
+  border: 0px solid #00331a;
   width: 320px;
   height: 130px;
   margin-top: 0px;
@@ -185,6 +195,14 @@ h4 {
   align-items: flex-start;
   text-decoration: none;
 }
+h5 {
+  background-color: #eeeeee;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: black;
+  width: 100%;
+}
+
 .csvdescription {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
